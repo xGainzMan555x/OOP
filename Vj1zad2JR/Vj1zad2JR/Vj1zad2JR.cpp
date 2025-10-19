@@ -1,6 +1,8 @@
 #include "pch.h"
 #include <iostream>
 
+
+
 using namespace std;
 
 int borderFunc(int num) {
@@ -37,12 +39,13 @@ double borderFunc(double num) {
 
 int main()
 {
-	int numInt;
-	double numDouble;
-	cout << "Unesite vrijednost broja u int i double: "<< endl;
-	cin >> numInt >> numDouble;
+	cout << "Vrijednost int: " << borderFunc(52) << endl;
+	cout << "Vrijednost double: " << borderFunc(13.2);
 
-	cout << "Vrijednost int: " << borderFunc(numInt) << endl;
-	cout << "Vrijednost double: " << borderFunc(numDouble);
+	cout << "Vrijednost int: " << borderFunc(-15) << endl;
+	cout << "Vrijednost double: " << borderFunc(-10.5);
+	
+	cout << "Vrijednost int: " << borderFunc(110) << endl;
+	cout << "Vrijednost double: " << borderFunc(100.3);
 }
 
